@@ -199,7 +199,6 @@ E-commerce-MERN-Stack/
 ├── README.md
 └── LICENSE
 ```
-
 ## 📡 API Documentation
 
 ### Authentication Endpoints
