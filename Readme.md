@@ -6,7 +6,6 @@ A full-featured e-commerce platform built with the MERN stack (MongoDB, Express.
 ![React](https://img.shields.io/badge/react-18.0+-blue.svg)
 
 
-
 ## ✨ Features
 
 ### Customer Features
