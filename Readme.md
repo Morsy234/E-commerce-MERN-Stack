@@ -9,9 +9,7 @@ A full-featured e-commerce platform built with the MERN stack (MongoDB, Express.
 ## 📋 Table of Contents
 
 - [Features](#features)
-- [Demo](#demo)
 - [Tech Stack](#tech-stack)
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Running the Application](#running-the-application)
@@ -26,7 +24,6 @@ A full-featured e-commerce platform built with the MERN stack (MongoDB, Express.
 
 ### Customer Features
 - 🔐 User authentication (Register, Login, Logout)
-- 🔑 Password reset functionality
 - 👤 User profile management
 - 🛍️ Browse products by categories
 - 🔍 Advanced product search and filtering
@@ -43,7 +40,6 @@ A full-featured e-commerce platform built with the MERN stack (MongoDB, Express.
 - 📂 Category management
 - 👥 User management
 - 📋 Order management and status updates
-- 📈 Sales reports and statistics
 - 🖼️ Image upload and management
 
 ### Additional Features
@@ -54,23 +50,14 @@ A full-featured e-commerce platform built with the MERN stack (MongoDB, Express.
 - 📧 Email notifications
 - 💰 Multiple payment gateway integration options
 
-## 🎥 Demo
-
-**Live Demo:** [Add your deployed link here]
-
-**Test Accounts:**
-- Admin: `admin@example.com` / `admin123`
-- User: `user@example.com` / `user123`
 
 ## 🛠️ Tech Stack
 
 ### Frontend
 - **React.js** - UI library
-- **Redux** - State management
 - **React Router** - Navigation
 - **Axios** - HTTP client
-- **Bootstrap/Material-UI** - UI components
-- **CSS3** - Styling
+- **TailwindCSS** - Styling
 
 ### Backend
 - **Node.js** - Runtime environment
@@ -82,20 +69,10 @@ A full-featured e-commerce platform built with the MERN stack (MongoDB, Express.
 - **Multer** - File uploads
 
 ### Additional Tools
-- **Cloudinary** - Image hosting
-- **Stripe/PayPal** - Payment processing
-- **Nodemailer** - Email service
 - **dotenv** - Environment variables
 - **Postman** - API testing
 
-## 📦 Prerequisites
 
-Before running this project, make sure you have the following installed:
-
-- **Node.js** (v14 or higher)
-- **npm** or **yarn**
-- **MongoDB** (local or MongoDB Atlas)
-- **Git**
 
 ## 🚀 Installation
 
@@ -128,8 +105,7 @@ Create a `.env` file in the `backend` directory:
 
 ```env
 # Server Configuration
-PORT=5000
-NODE_ENV=development
+PORT=4000
 
 # Database
 MONGODB_URI=your_mongodb_connection_string
@@ -138,33 +114,17 @@ MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 JWT_EXPIRE=7d
 
-# Cloudinary (Image Upload)
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
-# Email Configuration (Nodemailer)
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_EMAIL=your_email@gmail.com
-SMTP_PASSWORD=your_email_password
 
-# Payment Gateway (Optional)
-STRIPE_SECRET_KEY=your_stripe_secret_key
-PAYPAL_CLIENT_ID=your_paypal_client_id
 
-# Frontend URL
-FRONTEND_URL=http://localhost:3000
-```
+# Admin Configuration 
+ADMIN_EMAIL = "youremail"
+ADMIN_PASSWORD = "yourpassword"
 
-### Frontend (.env)
 
-Create a `.env` file in the `frontend` directory:
 
-```env
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_public_key
-```
+
+
 
 ## ▶️ Running the Application
 
@@ -173,32 +133,20 @@ REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_public_key
 **Run Backend:**
 ```bash
 cd backend
-npm run dev
+npm run server
 ```
 
 **Run Frontend:**
 ```bash
 cd frontend
-npm start
+npm run dev
 ```
 
-### Production Mode
 
-**Build Frontend:**
-```bash
-cd frontend
-npm run build
-```
-
-**Run Backend with Frontend:**
-```bash
-cd backend
-npm start
-```
 
 The application will be running at:
-- Frontend: `http://localhost:3000`
-- Backend: `http://localhost:5000`
+- Frontend: `http://localhost:5174`
+- Backend: `http://localhost:4000`
 
 ## 📁 Project Structure
 
@@ -308,50 +256,11 @@ GET    /api/users                  - Get all users (Admin)
 DELETE /api/users/:id              - Delete user (Admin)
 ```
 
-## 📸 Screenshots
+##🙏 Acknowledgments
 
-### Homepage
-![Homepage](screenshots/homepage.png)
-
-### Product Page
-![Products](screenshots/products.png)
-
-### Shopping Cart
-![Cart](screenshots/cart.png)
-
-### Admin Dashboard
-![Admin](screenshots/admin-dashboard.png)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Contact
-
-**Your Name**
-
-- GitHub: [@Morsy234](https://github.com/Morsy234)
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors
-- Inspiration from various MERN stack tutorials
-- UI design inspiration from modern e-commerce platforms
-
----
-
-⭐ If you found this project helpful, please give it a star!
+GreatStack - Special thanks to GreatStack for the tutorial and guidance
+Thanks to all contributors
+Inspiration from various MERN stack tutorials and resources
+UI design inspiration from e-commerce platforms made by GreatStack
 
 **Made with ❤️ using MERN Stack**
